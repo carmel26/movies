@@ -28,6 +28,8 @@
               "src/assets"
             ],
             "styles": [
+              "src/theme/core.scss",
+              "src/theme/custom.scss",
               "src/styles.scss"
             ],
             "scripts": []
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "movies"
+    }
+  },
+  "defaultProject": "movies",
+  "cli": {
+    "analytics": false
+  }
 }

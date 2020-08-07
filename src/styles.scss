@@ -1,1 +1,158 @@
 /* You can add global styles to this file, and also import other style files */
+$full-height: 100vh;
+
+body {
+  background-color: gray;
+}
+
+.full-screen-image {
+  width: 100vw;
+  height: $full-height;
+  position: absolute;
+}
+
+.full-screen {
+  position: relative;
+  height: $full-height;
+  width: 100vw;
+}
+
+.div-f {
+  width: 100px;
+  height: $full-height;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(transparent, transparent);
+  transition: all .4s ease-out;
+
+  & span {
+    color: blanchedalmond;
+    transition: all .1s ease-in;
+  }
+
+  &:hover {
+    width: 200px;
+
+    & span {
+      color: black;
+      transform: scale(1.5);
+    }
+  }
+
+  &-left {
+    left: 0;
+    // transform: rotateY(180deg);
+
+    &:hover {
+      background-image: linear-gradient(to right, rgba(36, 35, 35, 0.856), transparent);
+
+    }
+  }
+
+  &-rigth {
+    right: 0;
+
+    &:hover {
+      background-image: linear-gradient(to left, rgba(36, 35, 35, 0.856), transparent);
+
+    }
+  }
+
+  &-center {
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    right: 50%;
+    // background-color: teal;
+    border-radius: 1rem;
+    transform: translate(50%);
+    transform: rotateY(180deg);
+  }
+}
+
+.angle-left {
+  display: block;
+  color: whitesmoke;
+  font-size: 3rem;
+}
+
+.angle-rigth {
+  display: block;
+  color: whitesmoke;
+  font-size: 3rem;
+}
+
+.angle-center {
+  display: block;
+  color: whitesmoke;
+  font-size: 3rem;
+}
+
+.liste-bouton {
+  flex-direction: row;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  display: flex;
+}
+
+.bouton-action {
+  width: 80px;
+  height: 30px;
+  border-radius: 3rem;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  margin-left: 2px;
+  margin-right: 2px;
+
+  &:hover {
+    background-color: rgba(71, 69, 69, 0.692);
+    color: honeydew;
+    border: 2px solid whitesmoke;
+  }
+
+}
+
+
+.film {
+  border: 2px solid whitesmoke;
+  border-radius: 1rem;
+  position: relative;
+  margin: 1rem;
+  width: 200px;
+  height: 400px;
+}
+
+.film-image {
+  background-image: url(./assets/filmImage1.jpg);
+  position: absolute;
+  width: 195.5px;
+  height: 300px;
+  border-radius: 1rem 1rem 1px 1px;
+  position: relative;
+}
+
+.film-content {
+  position: absolute;
+  width: 195.5px;
+  height: 97px;
+  border-radius: 1px 1px 1rem 1rem;
+  position: relative;
+}
+
+.etoiles {
+  display: flex;
+}
+
+.presentation-acteur {
+  margin: 3px;
+}
+
+.liste-film {
+  display: flex;
+}
